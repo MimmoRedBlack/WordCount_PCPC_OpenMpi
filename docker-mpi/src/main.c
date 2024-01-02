@@ -457,7 +457,7 @@ int main(int argc, char **argv)
     MPI_Comm_size(MPI_COMM_WORLD, &num_processes);
      double start_time, end_time;
     // Inizio del cronometro
-    //start_time = MPI_Wtime();
+   // start_time = MPI_Wtime();
     // Dichiarazioni e inizializzazioni necessarie
     MPI_Request request_send_size[num_processes - 1];
     MPI_Request request_send_buffer[num_processes - 1];
@@ -482,7 +482,6 @@ int main(int argc, char **argv)
     }
 
     long total_size = get_total_file_size(dir, INPUT_DIR);
-    //printf("totalsize: %ld\n", total_size);
     // Invia la dimensione totale del file a tutti i processi
     MPI_Bcast(&total_size, 1, MPI_LONG, MASTER_RANK, MPI_COMM_WORLD);
     // Array per contenere tutte le OccurrenceNode ricevute dai processi SLAVE
@@ -693,11 +692,11 @@ int main(int argc, char **argv)
             free(local_occurrences);
         }
     }
-   
-    //end_time = MPI_Wtime();
+   /*
+    end_time = MPI_Wtime();
     
     if(rank == 0)
-        // printf("Time in second = %f\n", end_time - start_time);
+        printf("Time in second = %f\n", end_time - start_time); */
     MPI_Finalize();
 
     return 0;

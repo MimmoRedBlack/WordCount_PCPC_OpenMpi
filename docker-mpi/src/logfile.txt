@@ -1,16 +1,13 @@
 Start test
 Run with 3 processors
-totalsize: 3843940Time in second = 1.033332
-totalsize: 3843940totalsize: 3843940Run with 4 processors
-totalsize: 3843940Time in second = 1.078633
-totalsize: 3843940totalsize: 3843940totalsize: 3843940Run with 5 processors
+Run with 4 processors
+Run with 5 processors
 Run with 6 processors
 Run with 7 processors
 Run with 8 processors
 Run with 9 processors
 Run with 10 processors
-totalsize: 3843940Time in second = 0.752675
-totalsize: 3843940totalsize: 3843940totalsize: 3843940totalsize: 3843940totalsize: 3843940totalsize: 3843940totalsize: 3843940totalsize: 3843940totalsize: 3843940Run with 11 processors
+Run with 11 processors
 Run with 12 processors
 Run with 13 processors
 Run with 14 processors
